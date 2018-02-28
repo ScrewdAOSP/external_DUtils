@@ -152,7 +152,7 @@ public class ActionHandler {
         sDisabledActions.add(SYSTEMUI_TASK_ONE_HANDED_MODE_LEFT);
         sDisabledActions.add(SYSTEMUI_TASK_ONE_HANDED_MODE_RIGHT);
         // we need to make this more reliable when the user tap the partial screenshot button
-        // quickly and more times 
+        // quickly and more times
         sDisabledActions.add(SYSTEMUI_TASK_REGION_SCREENSHOT);
     }
 
@@ -994,7 +994,7 @@ public class ActionHandler {
                     }
                 }
 
-                if (pkg != null && !pkg.equals("com.android.systemui")
+                if (pkg != null && !pkg.equals("com.android.systemui") && !pkg.equals("com.screwdaosp.lean")
                         && !pkg.equals(defaultHomePackage)) {
 
                     // Restore home screen stack before killing the app
